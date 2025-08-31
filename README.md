@@ -22,7 +22,7 @@ There are many package managers for ZSH.  The only one really tested is `oh-my-z
 Clone this repository using the following command:
 
 ```sh
-    git clone https://github.com/TheDarkTrumpet/venv-autoactivate.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/venv-autoactivate
+git clone https://github.com/TheDarkTrumpet/venv-autoactivate.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/venv-autoactivate
 ```
 
 `$ZSH_CUSTOM` is oh-my-zsh’s customization directory ([docs](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization/)).
