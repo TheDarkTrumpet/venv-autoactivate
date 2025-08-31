@@ -8,7 +8,6 @@ function _activate_env_if_exists() {
 	fi
     elif [[ -d ./.env ]] ; then
 	source ./.env/bin/activate
-    fi
     else
 	## check the current folder belong to earlier VIRTUAL_ENV folder
 	# if yes then do nothing
@@ -18,7 +17,7 @@ function _activate_env_if_exists() {
             deactivate
 	    _activate_env_if_exists
 	fi
-fi
+    fi
 }
 
 autoload -U add-zsh-hook
