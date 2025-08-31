@@ -14,3 +14,33 @@ Besides taking the initital inspiration from the the above, some changes were ma
 3. Added `venv` and `.venv`, in addition to the `.env` that they had (kept because why not, even though I don't use it)
 
 If you don't store your `.venv` or `venv` in the project directory, you may be better served using the [pyenv plugin](https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/pyenv/pyenv.plugin.zsh)
+
+# Installation
+
+There are many package managers for ZSH.  The only one really tested is `oh-my-zsh` which is below, but leaving the others too incase you use them.
+
+Clone this repository using the following command:
+
+```sh
+    git clone https://github.com/TheDarkTrumpet/venv-autoactivate.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/venv-autoactivate
+```
+
+`$ZSH_CUSTOM` is oh-my-zsh’s customization directory ([docs](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization/)).
+
+Then add `venv-autoactivate` to the `plugins` array in your `.zshrc`:
+
+```
+plugins=(
+# ...
+venv-autoactivate
+# ...
+)
+```
+
+Other untested methods are below, for installation - add them to your `.zshrc` depending on the package manager:
+
+`zplug "TheDarkTrumpet/venv-autoactivate"`
+
+`antigen bundle "TheDarkTrumpet/venv-autoactivate"`
+
+`zgen load "TheDarkTrumpet/venv-autoactivate"`
